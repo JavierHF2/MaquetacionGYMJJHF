@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/movil.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <script src='https://kit.fontawesome.com/63b14c4389.js' crossorigin='anonymous'></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/fancybox.js"></script>
+    <script src="js/responsiveslides.js"></script>
+    <script src="js/wow.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header id="top">
+        <div class="contenedor_logo">
+            <figure>
+                <img src="resources/logo.png" alt="logo">
+            </figure>
+            <i id="iconomenu"class="fa-solid fa-bars"></i>
+        </div>
+
+        <nav id="cajamenu">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">COACHES</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contenedorslide">
+        <ul class="rslides">
+            <li><img src="resources/slide1.jpg" alt=""></li>
+            <li><img src="resources/slide2.jpg" alt=""></li>
+            <li><img src="resources/slide3.jpg" alt=""></li>
+        </ul>
+
+        <div class="contenedorslide_info">
+            <h1>BEST<br><br><br>FITNESS</h1>
+            <br>
+            <br>
+            <p>Our club encourages wellness by providing top-notch equipment, first-class instructors, innovative classes, and qualified staff.</p>
+            <br>
+            <br>
+            <a class="boton" href="#">JOIN NOW</a>
+        </div>
+
+        <i class="flechaizq fa-solid fa-chevron-left"></i>
+        <i class="flechader fa-solid fa-chevron-right"></i>
+
+        <div class="filtro"></div>
+
+        <div class="movildatos">
+            <h1>BEST<br>FITNESS</h1>
+            <br>
+            <a class="boton" href="#">JOIN NOW</a>
+        </div>
+    </section>
+
+    <div class="servicios">
+        <h1>SERVICES</h1>
+        <section>
+            <article class="servicio wow animate__animated animate__fadeInLeft">
+                <div class="servicio_iconos">
+                    <i class="fas fa-award"></i>
+                </div>
+                <div class="servicio_texto">
+                    <h2>QUALITY SERVICE</h2>
+                    <br>
+                    <p>At our fitness studio, you can experience the best level of customer service.</p>
+                </div>
+            </article>
+
+            <article class="servicio wow animate__animated animate__fadeInRight">
+                <div class="servicio_iconos">
+                    <i class="fas fa-dumbbell"></i>
+                </div>
+                <div class="servicio_texto">
+                    <h2>SPACIOUS GYM</h2>
+                    <br>
+                    <p>Our gym has enough place for all kinds of workouts and a wide variety of equipment.</p>
+                </div>
+            </article>
+
+            <article class="servicio wow animate__animated animate__fadeInLeft">
+                <div class="servicio_iconos">
+                    <i class="fas fa-file-invoice"></i>
+                </div>
+                <div class="servicio_texto">
+                    <h2>UNIQUE FITNESS PROGRAMS</h2>
+                    <br>
+                    <p>Our coaches have developed more than 50 fitness programs and workouts for you.</p>
+                </div>
+            </article>
+
+            <article class="servicio wow animate__animated animate__fadeInRight">
+                <div class="servicio_iconos">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="servicio_texto">
+                    <h2>GROUP CLASSES</h2>
+                    <br>
+                    <p>If you prefer training with friends, then our group classes have what you need.</p>
+                </div>
+            </article>
+        </section>
+
+    </div>
+
+    <div class="galeria">
+        <section class="fotos">
+            <a id="foto1" href="resources/foto1.jpg" data-fancybox="gallery" data-caption="Fotografia 1">
+                <figure class="foto">
+                    <img src="resources/foto1.jpg" alt="">
+                </figure>
+            </a>
+            <a id="foto2" href="resources/foto2.jpg" data-fancybox="gallery" data-caption="Fotografia 2">
+                <figure class="foto">
+                    <img src="resources/foto2.jpg" alt="">
+                </figure>
+            </a>
+            <a id="foto3" href="resources/foto3.jpg" data-fancybox="gallery" data-caption="Fotografia 3">
+                <figure class="foto">
+                    <img src="resources/foto3.jpg" alt="">
+                </figure>
+            </a>
+            <a id="foto4" href="resources/foto4.jpg" data-fancybox="gallery" data-caption="Fotografia 4">
+                <figure class="foto">
+                    <img src="resources/foto4.jpg" alt="">
+                </figure>
+            </a>
+        </section>
+
+        <div class="galeria_texto">
+            <div>
+                <h1>GALLERY <br><br><span>FITNESS</span> CLUB</h1>
+                <br>
+                <br>
+                <p>Profit is the fitness club that makes fitness totally accessible to everybody. We promise to help people from all walks of life achieve their individual health and fitness goals - no matter their shape, age, and experience.</p>
+                <br>
+                <br>
+                <a class="boton" href="#">JOIN NOW</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenedor_botonsubir">
+        <a href="#top">^</a>
+    </div>
+
+    <footer>
+        <div class="footertexto">
+            <p>© 2020 Profit. Privacy Policy</p>
+        </div>
+
+        <div class="footericonos">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        new WOW().init();
+
+        $("#iconomenu").click(function () {
+            $("#cajamenu").slideToggle();
+        });
+
+        $(function () {
+            $(".rslides").responsiveSlides();
+        });
+
+        Fancybox.bind("[data-fancybox]", {
+            // Your custom options
+        });
+    </script>
+</body>
+</html>
